@@ -1,0 +1,165 @@
+*{
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+body{
+	position: absolute;
+	font-family: 'Lobster', cursive;
+	background: url('../img/backg.png');
+	color: tan;
+
+
+}
+
+/*********************************************************************/
+
+#logo{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	width: 400px;
+	height: 50px;
+	font-size: 50px;
+	text-shadow: 5px 5px 5px #FF0000;
+	border: 2x solid tan;
+	background: transparent;
+}
+
+
+#logo span{
+	position: absolute;
+	left: 150px;
+	top: 0;
+	width: 250px;
+	color: white;
+	font-size: 50px;
+	text-align: right;
+}
+
+
+/*********************************************************************/
+
+nav{
+	position: absolute;
+	left: 830px;
+	top: 50px;
+	width: 400px;
+	height: 25px;
+	color: tan;
+	font-size: 15px;
+	text-align: center;
+
+
+}
+
+nav li{
+	list-style-type: none;
+	float: left;
+	width: 20%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	opacity: .75;
+	text-shadow: 5px 5px 5px #FF0000;
+	color: tan;
+
+}
+nav li:hover{
+	-webkit-animation: second 2s;
+}
+@-webkit-keyframes second{
+	60%  {font-size: 150%;}
+	90%  {font-size: 100%;}
+}
+
+
+/*********************************************************************/
+
+section{
+	position: absolute;
+	left: 50px;
+	top: 150px;
+	width: 1180px;
+	height: 150px;
+	font-size: 125%;
+	background: transparent;
+
+}
+
+section h1{
+	text-align: center;
+}
+
+/*********************************************************************/
+.box{
+	position: absolute;
+	width: 375px;
+	height: 175px;
+	border: 2px solid tan;
+	background: transparent;
+	-webkit-transition: -webkit-transform 1s;
+}
+.box:hover{
+	-webkit-transform: rotateY(50deg);
+}
+
+.row1{
+	top: 350px;
+}
+
+.row2{
+	top: 552px;
+}
+
+.row3{
+	top: 755px;
+}
+
+.col1{
+	left: 50px;
+}
+
+.col2{
+	left: 452px;
+}
+
+.col3{
+	left: 855px;
+}
+
+#box01{
+	background: url('http://lorempixel.com/400/200/nature/10');
+}
+
+#box02{
+	background: url('http://lorempixel.com/400/200/nature/2');
+}
+
+#box03{
+	background: url('http://lorempixel.com/400/200/nature/3');
+}
+
+#box04{
+	background: url('http://lorempixel.com/400/200/nature/4');
+}
+
+#box05{
+	background: url('http://lorempixel.com/400/200/nature/5');
+}
+
+#box06{
+	background: url('http://lorempixel.com/400/200/nature/6');
+}
+
+#box07{
+	background: url('http://lorempixel.com/400/200/nature/7');
+}
+
+#box08{
+	background: url('http://lorempixel.com/400/200/nature/8');
+}
+
+#box09{
+	background: url('http://lorempixel.com/400/200/nature/9');
+}
