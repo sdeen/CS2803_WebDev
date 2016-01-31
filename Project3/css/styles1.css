@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Georgia;
+    background: black;
+}
+
+#first{
+    position: relative;
+    margin-top: 5%;
+    float: left;
+    width: 30%;
+}
+
+header{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px gray;
+}
+
+h1{
+    font-size: 4em;
+
+}
+
+nav{
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+    margin-left: 30%;
+    margin-right: 20%;
+    text-align: center;
+    right: 10%;
+
+}
+
+nav a:link {color: white; text-decoration: none;text-shadow: 0px 0px 5px gray;}
+nav a:visited {color: white; text-decoration: none;text-shadow: 0px 0px 5px gray;}
+nav a:hover {color: teal; text-decoration: none;text-shadow: 0px 0px 5px gray;}
+nav a:active {color: white; text-decoration: none;text-shadow: 0px 0px 5px gray;}
+
+nav li{
+    list-style-type: none;
+}
+
+#imgSmall{
+    padding-left: -20cm;
+    padding-right: 10cm;
+    width: 30%;
+    display: block;
+    margin-left: 30%;
+    margin-right: 0%;
+    float: center;
+}
+
+
+#second{
+    margin-top: 5%;
+    float: left;
+    width: 70%;
+    position: relative
+}
+
+#imgLarge{
+    width: 100%;
+    border: solid #2F4F4F 3px;
+
+}
+
+
+#third{
+    position: relative;
+    top: -500px;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 5px teal;
+    margin-top: -3%;
+    margin-left: 5%;
+    margin-right: 1%;
+    width: 90%;
+    font-size: 2em;
+}
+
+article h2{
+    font-size: 2em;
+}
+article p{
+    font-size: 0em;
+}
