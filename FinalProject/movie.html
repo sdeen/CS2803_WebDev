@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+     <!--
+        Author: Sultana Deen
+        Class: CS2803
+        Assignment: Final Project
+        Date: July 28, 2014
+        -->
+    <title> TRAILERS MANIAC</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link href="../demoengine/demoengine.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles4.css">
+    <script src="../demoengine/demoengine.js" defer></script>
+    <title>Search</title>
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+</head>
+<body>
+    <header>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <img id="imgSmall" src="img/logo.png" />
+        <h1>TRAILERS MANIAC</h1>
+    </header>
+    <nav>
+            <ul>
+                <li > <a href="https://academic-php.cc.gatech.edu/groups/cs2803dwd_sdeen3/FinalProject/index.html"> Home </a> </li>
+                <li > <a href="https://academic-php.cc.gatech.edu/groups/cs2803dwd_sdeen3/FinalProject/watch.html">  More Trailers </a> </li>
+                <li > <a href="https://academic-php.cc.gatech.edu/groups/cs2803dwd_sdeen3/FinalProject/top.html"> Trailer Of The Month </a> </li>
+                <li > <a href="https://academic-php.cc.gatech.edu/groups/cs2803dwd_sdeen3/FinalProject/contact.html"> Contact Us </a> </li>
+                <li > <a href="movie.html"> Search </a> </li>
+            </ul>
+        </nav>
+
+<article>
+    <form action="http://www.rottentomatoes.com/search/" target="_blank">
+        <input id="autocomplete" type="text" placeholder="Movie name" size="21" maxlength="120"name="search" >
+        <input id = "sub" type="submit" value="Search" class="button">
+        This will takes Rotten Tomatoes...
+    </form>
+</article>
+
+    <script>
+        $(function() {
+            $("#autocomplete").autocomplete({
+                delay: 500,
+                minLength: 3,
+                source: function(request, response) {
+                    $.getJSON("http://api.rottentomatoes.com/api/public/v1.0/movies.json?callback=?", {
+                        apikey: "8t2h24trdphhs6tutvedkmby",
+                        q: request.term,
+                        page_limit: 10
+                    }, function(data) {
+
+                        var array = data.error ? [] : $.map(data.movies, function(m) {
+                            return {
+                                label: m.title + " (" + m.year + ")",
+                                url: m.links.alternate
+                            };
+                        });
+                        response(array);
+                    });
+                },
+                focus: function(event, ui) {
+
+                    event.preventDefault();
+                },
+                select: function(event, ui) {
+
+                    event.preventDefault();
+
+                    window.open(ui.item.url);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

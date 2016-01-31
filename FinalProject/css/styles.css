@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../img/backg.jpg) top no-repeat;
+    background-color: black;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+
+header{
+    padding-left: 5%;
+    background: transparent;
+}
+
+img{
+    display: block;
+    float: left;
+    width: 7%;
+}
+h1{
+    float: left;
+    font-size: 3em;
+    color: white;
+    text-shadow: 10px 10px 50px white;
+}
+
+nav{
+    position: absolute;
+    left: 830px;
+    top: 50px;
+    width: 650px;
+    height: 25px;
+    color: tan;
+    font-size: 1.2em;
+    text-align: center;
+
+
+}
+
+
+nav a:link {color: white; text-decoration: none;text-shadow: 0px 0px 5px white;}
+nav a:visited {color: white; text-decoration: none;text-shadow: 0px 0px 5px white;}
+nav a:hover {color: gold; text-decoration: none;text-shadow: 0px 0px 5px white;}
+nav a:active {color: white; text-decoration: none;text-shadow: 0px 0px 5px white;}
+
+nav li{
+    list-style-type: none;
+    float: left;
+    width: 80px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    opacity: .75;
+    text-shadow: 5px 5px 5px #FF0000;
+    color: tan;
+
+}
+
+#autocomplete{
+    width: 30em;
+    height: 2em;
+    margin-left: -150px;
+    margin-right: auto;
+    margin-top: 150px;
+    border-radius: 0.3em;
+}
+#sub{
+    float: right;
+    margin-right: 30em;
+    margin-top: 150px;
+    width: 10em;
+    height: 4.5em;
+    border-radius: 1em;
+
+}
+
+input[type="text"] {
+    font-size:25px
+}
+
+#mad{
+
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 5%;
+
+
+}
+#hob{
+
+    width: 20%;
+    margin-left: 22%;
+    margin-top: 0%;
+}
+#horns{
+
+    width: 20%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+#tusk{
+
+    width: 20%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
