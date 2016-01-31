@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: url('../img/binary.jpg');
+    font-family: 'Rokkitt', serif;
+}
+
+#regtop{
+    background: url('../img/black.jpg');
+    box-shadow: 5px 5px 5px black;
+}
+
+#regBottom{
+    background: url('../img/backg.jpg');
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px black;
+    opacity: 1;
+}
+
+#scTotal{
+    background: black;
+    border: inset 2px;
+    border-radius: 2em;
+
+}
+#reset{
+    background: black;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    font-size: 4em;
+    color: lime;
+    border: inset 2px;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+#scReciept{
+    background: black;
+    border: inset 2px;
+    border-radius: 2em;
+}
+
+#logo{
+    background: url('../img/logo.png');
+    border: ridge 2px;
+    border-radius: 2em;
+}
+
+.button{
+    background: lime;
+    font-size: 1.5em;
+    font-style: bold;
+    color: #FF8C00;
+    text-shadow: 5px 5px 10px black;
+    border: outset 5px;
+
+
+}
+.button:hover{
+    cursor: pointer;
+
+}
+
+.prices{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height:40px;
+    top:20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#scReciept{
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: auto;
+    color:lime;
+    text-align: right;
+    font-size: 20px;
+}
+
+#scTotal{
+    left: 475;
+    color:lime;
+    text-align: center;
+    font-size: 55px;
+}
